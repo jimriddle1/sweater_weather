@@ -5,7 +5,6 @@ require 'rails_helper'
 RSpec.describe DailyWeather do
 
   it 'populates DailyWeather fields from JSON response' do
-    require 'date'
 
     daily_weather_data = 	{
     			"dt": 1659891600,
