@@ -24,6 +24,26 @@
           null
         ]
       },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/daily_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/geocode.rb": {
         "lines": [
           1,
@@ -105,6 +125,6 @@
         }
       }
     },
-    "timestamp": 1659901454
+    "timestamp": 1659902534
   }
 }
