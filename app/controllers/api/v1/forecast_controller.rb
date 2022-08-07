@@ -1,6 +1,6 @@
 class Api::V1::ForecastController < ApplicationController
 
-  def index
+  def landing
     coordinates = GeocodeFacade.get_coordinates(params[:location])
     entire_forecast = ForecastFacade.get_forecast(coordinates.lat, coordinates.lng)
     forecast = {
