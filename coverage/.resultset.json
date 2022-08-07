@@ -1,6 +1,29 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/current_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/geocode.rb": {
         "lines": [
           1,
@@ -55,19 +78,11 @@
           1,
           1,
           1,
-          null,
           1,
-          null,
           null,
           null,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null
         ]
@@ -90,6 +105,6 @@
         }
       }
     },
-    "timestamp": 1659900214
+    "timestamp": 1659901454
   }
 }
