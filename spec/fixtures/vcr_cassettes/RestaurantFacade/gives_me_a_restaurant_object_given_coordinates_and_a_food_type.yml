@@ -1,0 +1,331 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address/?key=jySLMdxKQGR611P3LcbkFXOei7PeKF4c&location=Chicago,%20IL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 08 Aug 2022 19:03:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1029'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 08 Aug 2022 19:03:10 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=B79876F4DB75ABEA0CEFD848CA0BE5E4; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Chicago,
+        IL"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Chicago","adminArea5Type":"City","adminArea4":"Cook
+        County","adminArea4Type":"County","adminArea3":"IL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039507","unknownInput":"","type":"s","latLng":{"lat":41.883229,"lng":-87.632398},"displayLatLng":{"lat":41.883229,"lng":-87.632398},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=jySLMdxKQGR611P3LcbkFXOei7PeKF4c&type=map&size=225,160&locations=41.883229,-87.632398|marker-sm-50318A-1&scalebar=true&zoom=12&rand=498931049"}]}]}'
+  recorded_at: Mon, 08 Aug 2022 19:03:10 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=Mexican&location=41.883229,%20-87.632398
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer llFKl4YQSGryN4AvEdCkWS13yYb-sNbueMcFrEvwGBdBu8Sk8RIG3kSeod9p5ksV2CJfk969a8AoCA4EovVLl3FgCDZ6ZQeHZ0jGslV4VyHHxkKKiYt7ENagrCjxYnYx
+      User-Agent:
+      - Faraday v2.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2022-08-09T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-5db947469f-5nlwz; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4906'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 7ea67d0a9b6ef44c
+      X-Cloudmap:
+      - routing_useast1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-133-10-useast1bprod
+      X-Extlb:
+      - 10-65-133-10-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Aug 2022 19:03:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-chi-kigq8000034-CHI
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "cKZNbMvoqJaUe7n6lf6i7w", "alias": "wildberry-pancakes-and-cafe-chicago-2",
+        "name": "Wildberry Pancakes and Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/43XNyVUbPJNtC6IFobGRMw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/wildberry-pancakes-and-cafe-chicago-2?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 8588, "categories": [{"alias": "pancakes", "title": "Pancakes"},
+        {"alias": "waffles", "title": "Waffles"}, {"alias": "cafes", "title": "Cafes"}],
+        "rating": 4.5, "coordinates": {"latitude": 41.884668, "longitude": -87.62288},
+        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "130 E Randolph St", "address2": "", "address3": "", "city": "Chicago", "zip_code":
+        "60601", "country": "US", "state": "IL", "display_address": ["130 E Randolph
+        St", "Chicago, IL 60601"]}, "phone": "+13129389777", "display_phone": "(312)
+        938-9777", "distance": 793.898344949934}, {"id": "qjnpkS8yZO8xcyEIy5OU9A",
+        "alias": "girl-and-the-goat-chicago", "name": "Girl & The Goat", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/ya6gjD4BPlxe7AKMj_5WsA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/girl-and-the-goat-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 9274, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "coffee", "title":
+        "Coffee & Tea"}], "rating": 4.5, "coordinates": {"latitude": 41.88418277967144,
+        "longitude": -87.64797390222085}, "transactions": ["delivery"], "price": "$$$",
+        "location": {"address1": "809 W Randolph St", "address2": "", "address3":
+        "", "city": "Chicago", "zip_code": "60607", "country": "US", "state": "IL",
+        "display_address": ["809 W Randolph St", "Chicago, IL 60607"]}, "phone": "+13124926262",
+        "display_phone": "(312) 492-6262", "distance": 1303.9313460517715}, {"id":
+        "boE4Ahsssqic7o5wQLI04w", "alias": "the-purple-pig-chicago", "name": "The
+        Purple Pig", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/oBPWSL6uQnJ9mAfWM2yxKA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-purple-pig-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 7733, "categories": [{"alias": "tapasmallplates", "title":
+        "Tapas/Small Plates"}, {"alias": "mediterranean", "title": "Mediterranean"},
+        {"alias": "newamerican", "title": "American (New)"}], "rating": 4.0, "coordinates":
+        {"latitude": 41.890694, "longitude": -87.624782}, "transactions": ["pickup",
+        "delivery"], "price": "$$$", "location": {"address1": "444 N Michigan Ave",
+        "address2": null, "address3": "", "city": "Chicago", "zip_code": "60611",
+        "country": "US", "state": "IL", "display_address": ["444 N Michigan Ave",
+        "Chicago, IL 60611"]}, "phone": "+13124641744", "display_phone": "(312) 464-1744",
+        "distance": 1035.7270005168614}, {"id": "xoi7Cw7FoknAx5p880RtWQ", "alias":
+        "au-cheval-chicago", "name": "Au Cheval", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/PZSZAFEjIZyRFOj5VIXVZw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/au-cheval-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 7836, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "tradamerican", "title": "American (Traditional)"}], "rating": 4.5, "coordinates":
+        {"latitude": 41.88466, "longitude": -87.647668}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "800 W Randolph St",
+        "address2": "", "address3": "", "city": "Chicago", "zip_code": "60607", "country":
+        "US", "state": "IL", "display_address": ["800 W Randolph St", "Chicago, IL
+        60607"]}, "phone": "+13129294580", "display_phone": "(312) 929-4580", "distance":
+        1284.1531154692034}, {"id": "apyIymDFbUK7u-Y3V5kmkA", "alias": "bavettes-bar-and-boeuf-chicago",
+        "name": "Bavette''s Bar & Boeuf", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/S3JMuUApnneZrpoQPz_KFw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bavettes-bar-and-boeuf-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2701, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 41.889295011779424, "longitude":
+        -87.63489302317039}, "transactions": ["delivery"], "price": "$$$", "location":
+        {"address1": "218 W Kinzie St", "address2": "", "address3": "", "city": "Chicago",
+        "zip_code": "60654", "country": "US", "state": "IL", "display_address": ["218
+        W Kinzie St", "Chicago, IL 60654"]}, "phone": "+13126248154", "display_phone":
+        "(312) 624-8154", "distance": 707.9149463706126}, {"id": "8vFJH_paXsMocmEO_KAa3w",
+        "alias": "lou-malnatis-pizzeria-chicago", "name": "Lou Malnati''s Pizzeria",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9FiL-9Pbytyg6usOE02lYg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lou-malnatis-pizzeria-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 6675, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "italian", "title": "Italian"}, {"alias": "sandwiches", "title":
+        "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 41.890357, "longitude":
+        -87.633704}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "439 N Wells St", "address2": "", "address3": "", "city": "Chicago",
+        "zip_code": "60654", "country": "US", "state": "IL", "display_address": ["439
+        N Wells St", "Chicago, IL 60654"]}, "phone": "+13128289800", "display_phone":
+        "(312) 828-9800", "distance": 800.7923384747386}, {"id": "AkcZ1fUyB3RocKLYGFu20Q",
+        "alias": "art-institute-of-chicago-chicago-3", "name": "Art Institute of Chicago",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LGtQrnCRJCBNsAS1-x2ilQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/art-institute-of-chicago-chicago-3?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2040, "categories": [{"alias": "artmuseums", "title": "Art
+        Museums"}], "rating": 4.5, "coordinates": {"latitude": 41.87989615322072,
+        "longitude": -87.6221473}, "transactions": [], "location": {"address1": "111
+        S Michigan Ave", "address2": "", "address3": "", "city": "Chicago", "zip_code":
+        "60603", "country": "US", "state": "IL", "display_address": ["111 S Michigan
+        Ave", "Chicago, IL 60603"]}, "phone": "+13124433600", "display_phone": "(312)
+        443-3600", "distance": 916.9092860327311}, {"id": "1hJYOI26FjCQ-Ce6iKAvug",
+        "alias": "cafecito-chicago", "name": "Cafecito", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/MDq5v19KEKHiT6Xc5NuNfg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cafecito-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2042, "categories": [{"alias": "coffee", "title": "Coffee
+        & Tea"}, {"alias": "cuban", "title": "Cuban"}, {"alias": "cafes", "title":
+        "Cafes"}], "rating": 4.5, "coordinates": {"latitude": 41.882416, "longitude":
+        -87.633641}, "transactions": ["delivery", "pickup"], "price": "$", "location":
+        {"address1": "7 N Wells", "address2": "", "address3": "", "city": "Chicago",
+        "zip_code": "60606", "country": "US", "state": "IL", "display_address": ["7
+        N Wells", "Chicago, IL 60606"]}, "phone": "+13122634750", "display_phone":
+        "(312) 263-4750", "distance": 145.17399560994767}, {"id": "vvhfPV-Llkd4fE2SHuLVvA",
+        "alias": "the-gage-chicago", "name": "The Gage", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w_OsQdxroFfNbT3N-xMFgg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-gage-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 3148, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "cocktailbars", "title": "Cocktail Bars"}], "rating": 4.0,
+        "coordinates": {"latitude": 41.881369, "longitude": -87.624698}, "transactions":
+        ["delivery", "pickup"], "price": "$$", "location": {"address1": "24 S Michigan
+        Ave", "address2": null, "address3": "", "city": "Chicago", "zip_code": "60603",
+        "country": "US", "state": "IL", "display_address": ["24 S Michigan Ave", "Chicago,
+        IL 60603"]}, "phone": "+13123724243", "display_phone": "(312) 372-4243", "distance":
+        660.6473072150815}, {"id": "PZe0q_153VHUnaR-8dOTJg", "alias": "the-dearborn-chicago-2",
+        "name": "The Dearborn", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/eSXeGiq2bRUjy7KOER4jeg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-dearborn-chicago-2?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 1762, "categories": [{"alias": "seafood", "title": "Seafood"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
+        41.8842528, "longitude": -87.6293151}, "transactions": ["delivery", "pickup"],
+        "price": "$$", "location": {"address1": "145 N Dearborn St", "address2": "",
+        "address3": null, "city": "Chicago", "zip_code": "60602", "country": "US",
+        "state": "IL", "display_address": ["145 N Dearborn St", "Chicago, IL 60602"]},
+        "phone": "+13123841242", "display_phone": "(312) 384-1242", "distance": 276.8389731392699},
+        {"id": "jGiKIJCVLZHXQDSNnSLPsw", "alias": "xoco-chicago", "name": "Xoco",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/0Z6QVmxTHd16d28e_5eEdg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/xoco-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 3791, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "sandwiches",
+        "title": "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 41.890969,
+        "longitude": -87.630776}, "transactions": ["delivery", "pickup"], "price":
+        "$$", "location": {"address1": "449 N Clark St", "address2": "", "address3":
+        "", "city": "Chicago", "zip_code": "60654", "country": "US", "state": "IL",
+        "display_address": ["449 N Clark St", "Chicago, IL 60654"]}, "phone": "+13127232131",
+        "display_phone": "(312) 723-2131", "distance": 868.9546692223225}, {"id":
+        "ziIfrqtyupmeNlPAOx6jTw", "alias": "quartino-ristorante-chicago", "name":
+        "Quartino Ristorante", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Z6YpgycrUniinFNWWMzzDw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/quartino-ristorante-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 5082, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 41.8934479679332, "longitude": -87.6283662020996}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "626 N State St", "address2":
+        null, "address3": "", "city": "Chicago", "zip_code": "60654", "country": "US",
+        "state": "IL", "display_address": ["626 N State St", "Chicago, IL 60654"]},
+        "phone": "+13126985000", "display_phone": "(312) 698-5000", "distance": 1180.886651886808},
+        {"id": "2tKMs0DbdxPSl2JeCJUEKw", "alias": "joes-seafood-prime-steak-and-stone-crab-chicago",
+        "name": "Joe''s Seafood, Prime Steak & Stone Crab", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qdKlgUn4qNIEPykt4lF-dw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/joes-seafood-prime-steak-and-stone-crab-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2726, "categories": [{"alias": "seafood", "title": "Seafood"},
+        {"alias": "steak", "title": "Steakhouses"}], "rating": 4.5, "coordinates":
+        {"latitude": 41.891938, "longitude": -87.62569}, "transactions": ["delivery",
+        "pickup"], "price": "$$$", "location": {"address1": "60 E Grand Ave", "address2":
+        "", "address3": null, "city": "Chicago", "zip_code": "60611", "country": "US",
+        "state": "IL", "display_address": ["60 E Grand Ave", "Chicago, IL 60611"]},
+        "phone": "+13123795637", "display_phone": "(312) 379-5637", "distance": 1109.608095973303},
+        {"id": "2DfcXGtDv7T_rnvl4lHzaQ", "alias": "millennium-park-chicago", "name":
+        "Millennium Park", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ChaxWprpD_HZZzQztouB1w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/millennium-park-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 1304, "categories": [{"alias": "parks", "title": "Parks"}],
+        "rating": 4.5, "coordinates": {"latitude": 41.88339, "longitude": -87.6218446},
+        "transactions": [], "location": {"address1": "201 E Randolph St", "address2":
+        "", "address3": "", "city": "Chicago", "zip_code": "60602", "country": "US",
+        "state": "IL", "display_address": ["201 E Randolph St", "Chicago, IL 60602"]},
+        "phone": "+13127421168", "display_phone": "(312) 742-1168", "distance": 863.6253950283519},
+        {"id": "B_04jjMZjeGGKjaPcR3Kig", "alias": "three-dots-and-a-dash-chicago",
+        "name": "Three Dots and A Dash", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qK4hv_fNaF41Fh_fETNUEQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/three-dots-and-a-dash-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 3589, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "tikibars", "title": "Tiki Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 41.8904391303273, "longitude": -87.6306027367742}, "transactions":
+        ["delivery", "pickup"], "price": "$$", "location": {"address1": "435 N Clark
+        St", "address2": "Back alley on Hubbard St", "address3": "", "city": "Chicago",
+        "zip_code": "60654", "country": "US", "state": "IL", "display_address": ["435
+        N Clark St", "Back alley on Hubbard St", "Chicago, IL 60654"]}, "phone": "+13126104220",
+        "display_phone": "(312) 610-4220", "distance": 813.0015885624929}, {"id":
+        "bQaiow1WcwwSODUo9hHOMQ", "alias": "rpm-italian-chicago", "name": "RPM Italian",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Peqr02kZh01y-GGZqwgrIw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rpm-italian-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 3357, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.0, "coordinates": {"latitude": 41.8909608540557, "longitude":
+        -87.6300418625656}, "transactions": ["delivery", "pickup"], "price": "$$$",
+        "location": {"address1": "52 W Illinois St", "address2": "", "address3": "",
+        "city": "Chicago", "zip_code": "60654", "country": "US", "state": "IL", "display_address":
+        ["52 W Illinois St", "Chicago, IL 60654"]}, "phone": "+13122221888", "display_phone":
+        "(312) 222-1888", "distance": 878.8040923201366}, {"id": "rp17Dfjdh7JR4GGZwj6nqg",
+        "alias": "portillos-hot-dogs-chicago-4", "name": "Portillo''s Hot Dogs", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/hN-tljAlVOkckjvWqik00w/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/portillos-hot-dogs-chicago-4?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 6210, "categories": [{"alias": "hotdog", "title": "Hot Dogs"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "burgers", "title": "Burgers"}],
+        "rating": 4.0, "coordinates": {"latitude": 41.8934295, "longitude": -87.6314147},
+        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "100 W", "address2": "", "address3": null, "city": "Chicago", "zip_code":
+        "60654", "country": "US", "state": "IL", "display_address": ["100 W", "Chicago,
+        IL 60654"]}, "phone": "+13125878910", "display_phone": "(312) 587-8910", "distance":
+        1135.881042757356}, {"id": "-sdMTRmgExufOk6STZFi9w", "alias": "little-goat-diner-chicago-5",
+        "name": "Little Goat Diner", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/FEdL5JcbVf5NFEB3s5S8Mg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-goat-diner-chicago-5?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 4847, "categories": [{"alias": "diners", "title": "Diners"}],
+        "rating": 4.0, "coordinates": {"latitude": 41.8846460590586, "longitude":
+        -87.6484126982138}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "820 W Randolph St", "address2": "", "address3": "", "city":
+        "Chicago", "zip_code": "60607", "country": "US", "state": "IL", "display_address":
+        ["820 W Randolph St", "Chicago, IL 60607"]}, "phone": "+13128883455", "display_phone":
+        "(312) 888-3455", "distance": 1345.1708368885927}, {"id": "mvFimrcREBIDo-pLAhMfNg",
+        "alias": "avec-chicago-chicago", "name": "Avec - Chicago", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/miJ7tOnQqa-eQPDDc5MSIw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/avec-chicago-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2303, "categories": [{"alias": "mediterranean", "title": "Mediterranean"}],
+        "rating": 4.5, "coordinates": {"latitude": 41.884290441849, "longitude": -87.6433979433133},
+        "transactions": ["delivery", "pickup"], "price": "$$$", "location": {"address1":
+        "615 W Randolph St", "address2": "", "address3": "", "city": "Chicago", "zip_code":
+        "60661", "country": "US", "state": "IL", "display_address": ["615 W Randolph
+        St", "Chicago, IL 60661"]}, "phone": "+13123772002", "display_phone": "(312)
+        377-2002", "distance": 928.2971906963438}, {"id": "dKcO9OQ44RPRlkWe-vToFA",
+        "alias": "shaws-crab-house-chicago", "name": "Shaw''s Crab House", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/TnS5biyTKb-iVRvDZ1yDMQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/shaws-crab-house-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
+        "review_count": 2428, "categories": [{"alias": "seafood", "title": "Seafood"},
+        {"alias": "sushi", "title": "Sushi Bars"}, {"alias": "cocktailbars", "title":
+        "Cocktail Bars"}], "rating": 4.0, "coordinates": {"latitude": 41.8899414,
+        "longitude": -87.6273507}, "transactions": ["delivery", "pickup"], "price":
+        "$$$", "location": {"address1": "21 E Hubbard St", "address2": "", "address3":
+        "", "city": "Chicago", "zip_code": "60611", "country": "US", "state": "IL",
+        "display_address": ["21 E Hubbard St", "Chicago, IL 60611"]}, "phone": "+13125272722",
+        "display_phone": "(312) 527-2722", "distance": 860.5871596771198}], "total":
+        2200, "region": {"center": {"longitude": -87.63227462768555, "latitude": 41.88323434397255}}}'
+  recorded_at: Mon, 08 Aug 2022 19:03:11 GMT
+recorded_with: VCR 6.1.0

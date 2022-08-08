@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'RestaurantFacade' do
-  it 'gives me a restaurant object given coordinates and a food type' do
+  it 'gives me a restaurant object given coordinates and a food type', :vcr do
     coordinates = GeocodeService.get_coordinates("Chicago, IL")
     restaurant = RestaurantFacade.get_resturant(coordinates[:lat], coordinates[:lng], "Mexican")
 

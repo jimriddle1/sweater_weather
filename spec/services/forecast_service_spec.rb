@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'ForecastService' do
 
-    it 'returns a forcast given a location' do
+    it 'returns a forcast given a location', :vcr do
       coordinates = GeocodeService.get_coordinates("Chicago, IL")
       parsed_json = ForecastService.get_forecast(coordinates[:lat], coordinates[:lng])
 

@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'GeocodeService' do
 
-    it 'returns a lat and long given a location' do
+    it 'returns a lat and long given a location', :vcr do
       parsed_json = GeocodeService.get_coordinates("Chicago, IL")
 
       expect(parsed_json).to be_a Hash

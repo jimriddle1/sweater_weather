@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Restaurant API' do
-  it 'returns the the restaurant info based on locaiton and food type' do
+  it 'returns the the restaurant info based on locaiton and food type', :vcr do
 
     get "/api/v1/munchies?location=chicago,il,&food=mexican"
 
