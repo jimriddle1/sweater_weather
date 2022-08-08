@@ -32,4 +32,20 @@ RSpec.describe 'Restaurant API' do
 
   end
 
+  it 'tests a sad path if no location and or food type is given' do
+
+    get "/api/v1/munchies"
+    response_body_1 = JSON.parse(response.body, symbolize_names: true)
+    expect(response_body_1[:errors]).to eq("Please include location and food type")
+
+    get "/api/v1/munchies?location=chicago,il"
+    response_body_2 = JSON.parse(response.body, symbolize_names: true)
+    expect(response_body_2[:errors]).to eq("Please include location and food type")
+
+    get "/api/v1/munchies?food=mexican"
+    response_body_3 = JSON.parse(response.body, symbolize_names: true)
+    expect(response_body_3[:errors]).to eq("Please include location and food type")
+
+  end
+
 end
