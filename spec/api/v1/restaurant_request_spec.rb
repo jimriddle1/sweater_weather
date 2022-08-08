@@ -12,23 +12,25 @@ RSpec.describe 'Restaurant API' do
     restaurant = response_body[:data]
 
     expect(forecast[:id]).to eq("null")
-    expect(forecast[:type]).to eq("forecast")
+    expect(forecast[:type]).to eq("munchie")
 
-    current_weather = forecast[:attributes][:current_weather]
+    restaurant_info = restaurant[:attributes]
 
-    expect(current_weather).to be_a Hash
+    expect(restaurant_info).to be_a Hash
 
-    expect(current_weather).to include :datetime, :sunrise, :sunset, :temperature, :feels_like, :humidity, :uvi, :visibility, :conditions, :icon
-    expect(current_weather[:datetime]).to be_a(String)
-    expect(current_weather[:sunrise]).to be_a(String)
-    expect(current_weather[:sunset]).to be_a(String)
-    expect(current_weather[:temperature]).to be_a(Numeric)
-    expect(current_weather[:feels_like]).to be_a(Numeric)
-    expect(current_weather[:humidity]).to be_a(Integer)
-    expect(current_weather[:uvi]).to be_a(Float)
-    expect(current_weather[:visibility]).to be_a(Integer)
-    expect(current_weather[:conditions]).to be_a(String)
-    expect(current_weather[:icon]).to be_a(String)
+    expect(restaurant_info).to include :destination_city, :forecast, :restaurant
+    expect(restaurant_info[:destination_city]).to be_a(String)
+    expect(restaurant_info[:forecast]).to be_a(Hash)
+    expect(restaurant_info[:restaurant]).to be_a(Hash)
+
+    restaurant_forecast = restaurant_info[:forecast]
+    expect(restaurant_forecast[:summary]).to be_a(String)
+    expect(restaurant_forecast[:temperature]).to be_a(Numerical)
+
+    restaurant_details = restaurant_info[:restaurant]
+    expect(restaurant_details[:name]).to be_a(String)
+    expect(restaurant_details[:address]).to be_a(String)
+
 
 
 
