@@ -25,7 +25,7 @@ RSpec.describe 'Restaurant API' do
 
     restaurant_forecast = restaurant_info[:forecast]
     expect(restaurant_forecast[:summary]).to be_a(String)
-    expect(restaurant_forecast[:temperature]).to be_a(Float)
+    expect(restaurant_forecast[:temperature]).to be_a(Integer)
 
     restaurant_details = restaurant_info[:restaurant]
     expect(restaurant_details[:name]).to be_a(String)

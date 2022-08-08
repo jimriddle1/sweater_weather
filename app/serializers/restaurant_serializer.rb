@@ -9,7 +9,7 @@ class RestaurantSerializer
           "destination_city": info[:restaurant_info].destination_city,
           "forecast": {
             "summary": info[:current_weather].conditions,
-            "temperature": info[:current_weather].temperature
+            "temperature": info[:current_weather].temperature.to_i
           },
           "restaurant": {
             "name": info[:restaurant_info].name,
