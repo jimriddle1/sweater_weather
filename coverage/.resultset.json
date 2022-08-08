@@ -1,6 +1,33 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/models/user.rb": {
         "lines": [
           1,
@@ -18,343 +45,376 @@
           null
         ]
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/current_weather.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/user_serializer.rb": {
         "lines": [
-          1,
-          1,
+          0,
           null,
-          1,
-          null,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          null,
-          null,
-          null,
-          null
-        ]
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/daily_weather.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/restaurant_serializer.rb": {
         "lines": [
-          1,
-          1,
+          0,
           null,
-          1,
-          null,
-          11,
-          11,
-          11,
-          11,
-          11,
-          11,
-          11,
-          null,
-          null,
-          null,
-          null
-        ]
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/geocode.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/forecast_serializer.rb": {
         "lines": [
-          1,
-          1,
+          0,
           null,
-          1,
-          null,
-          4,
-          4,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/hourly_weather.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          17,
-          17,
-          17,
-          17,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/restaurant.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          3,
-          3,
-          3,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/facades/geocode_facade.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          3,
-          3,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/geocode_service.rb": {
-        "lines": [
-          1,
-          1,
-          8,
-          8,
-          8,
-          null,
-          null,
-          null,
-          1,
-          8,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/facades/forecast_facade.rb": {
         "lines": [
           null,
           null,
-          1,
+          0,
           null,
-          1,
-          3,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
           null,
-          1,
-          3,
-          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          1,
-          2,
-          2,
-          10,
-          null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          16,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/forecast_service.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          4,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/forecast_serializer.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          5,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          8,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/restaurant_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          3,
-          null,
-          null,
-          null,
-          null
-        ]
+          0
+        ],
+        "branches": {
+        }
       },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/facades/restaurant_facade.rb": {
         "lines": [
           null,
           null,
-          1,
+          0,
           null,
-          1,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
-          null,
-          null
-        ]
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/restaurant_service.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/facades/geocode_facade.rb": {
         "lines": [
-          1,
-          1,
-          3,
-          3,
           null,
           null,
+          0,
           null,
-          1,
-          3,
+          0,
+          0,
+          0,
+          0,
           null,
-          null,
-          null
-        ]
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/restaurant_serializer.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/current_weather.rb": {
         "lines": [
-          1,
+          0,
+          0,
           null,
-          1,
+          0,
           null,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
+          0,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
+          0
+        ],
+        "branches": {
+        }
       },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/users_controller.rb": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/restaurant.rb": {
         "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
           0,
           null,
           null,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/geocode.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
           null,
           null,
+          0,
           null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/hourly_weather.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/daily_weather.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/restaurant_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/geocode_service.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/restaurant_service.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/services/forecast_service.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1659985399
+    "timestamp": 1659986724
   }
 }
