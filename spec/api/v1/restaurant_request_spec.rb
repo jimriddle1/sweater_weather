@@ -11,8 +11,8 @@ RSpec.describe 'Restaurant API' do
     response_body = JSON.parse(response.body, symbolize_names: true)
     restaurant = response_body[:data]
 
-    expect(forecast[:id]).to eq("null")
-    expect(forecast[:type]).to eq("munchie")
+    expect(restaurant[:id]).to eq("null")
+    expect(restaurant[:type]).to eq("munchie")
 
     restaurant_info = restaurant[:attributes]
 
@@ -25,7 +25,7 @@ RSpec.describe 'Restaurant API' do
 
     restaurant_forecast = restaurant_info[:forecast]
     expect(restaurant_forecast[:summary]).to be_a(String)
-    expect(restaurant_forecast[:temperature]).to be_a(Numerical)
+    expect(restaurant_forecast[:temperature]).to be_a(Float)
 
     restaurant_details = restaurant_info[:restaurant]
     expect(restaurant_details[:name]).to be_a(String)
