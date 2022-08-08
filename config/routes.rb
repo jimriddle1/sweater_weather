@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get '/forecast', to: 'forecast#landing'
       get '/munchies', to: 'restaurant#show'
       post '/users', to: 'users#create'
+      post '/sessions', to: 'sessions#login'
     end
   end
 
