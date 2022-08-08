@@ -1,6 +1,23 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/poros/current_weather.rb": {
         "lines": [
           1,
@@ -228,17 +245,8 @@
           null,
           null
         ]
-      },
-      "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/models/application_record.rb": {
-        "lines": [
-          null,
-          null,
-          null
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1659908023
+    "timestamp": 1659970225
   }
 }
