@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'ForecastFacade' do
-  it 'gives me a current, daily, and hourly object given coordinates' do
+  it 'gives me a current, daily, and hourly object given coordinates', :vcr do
     coordinates = GeocodeService.get_coordinates("Chicago, IL")
 
     forecast_data = ForecastFacade.get_forecast(coordinates[:lat], coordinates[:lng])

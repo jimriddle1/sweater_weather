@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'RestaurantService' do
 
-    it 'returns a restaurant given some params' do
+    it 'returns a restaurant given some params', :vcr do
       coordinates = GeocodeService.get_coordinates("Chicago, IL")
       parsed_json = RestaurantService.get_resturant(coordinates[:lat], coordinates[:lng], "Mexican")
 
