@@ -42,7 +42,36 @@ RSpec.describe 'User API' do
     expect(response).to_not be_successful
 
     response_body = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
+    data = response_body[:data]
+    expect(data[:errors]).to eq("doesn't match Password")
+
+  end
+
+  it 'returns an api key when a user is created: sad path user already exists', :vcr do
+
+    header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+
+    body = {
+      "email": "whatever@example.com",
+      "password": "password",
+      "password_confirmation": "password"
+      }
+    post "/api/v1/users", headers:header, params: JSON.generate(body)
+
+    header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+
+    body = {
+      "email": "whatever@example.com",
+      "password": "password",
+      "password_confirmation": "password"
+      }
+    post "/api/v1/users", headers:header, params: JSON.generate(body)
+
+    expect(response).to_not be_successful
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    data = response_body[:data]
+    expect(data[:errors]).to eq("has already been taken")
 
   end
 
