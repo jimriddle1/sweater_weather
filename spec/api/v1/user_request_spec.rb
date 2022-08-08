@@ -12,7 +12,7 @@ RSpec.describe 'User API' do
       }
     post "/api/v1/users", headers:header, params: JSON.generate(body)
 
-    expect(response).to be_successful
+    expect(response.status).to eq(201)
 
     response_body = JSON.parse(response.body, symbolize_names: true)
     data = response_body[:data]
