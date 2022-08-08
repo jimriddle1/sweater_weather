@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'Restaurant API' do
   it 'returns the the restaurant info based on locaiton and food type' do
 
-    header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
     get "/api/v1/munchies?location=chicago,il,&food=mexican"
 
     expect(response).to be_successful
@@ -30,9 +29,6 @@ RSpec.describe 'Restaurant API' do
     restaurant_details = restaurant_info[:restaurant]
     expect(restaurant_details[:name]).to be_a(String)
     expect(restaurant_details[:address]).to be_a(String)
-
-
-
 
   end
 

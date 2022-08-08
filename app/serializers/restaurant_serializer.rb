@@ -1,7 +1,7 @@
 class RestaurantSerializer
 
   def self.setup_restaurant(info)
-    temp = {
+    {
       "data": {
         "id": "null",
         "type": "munchie",
