@@ -1,5 +1,5 @@
 class DailyWeather
-  attr_reader :datetime, :sunrise, :sunset, :max_temp, :min_temp, :conditions, :icon
+  attr_reader :datetime, :sunrise, :sunset, :max_temp, :min_temp, :conditions, :icon, :temperature
 
   def initialize(daily_weather_data)
 
@@ -10,6 +10,7 @@ class DailyWeather
     @min_temp = (1.8 * (daily_weather_data[:temp][:min] - 273) + 32)
     @conditions = daily_weather_data[:weather].first[:description]
     @icon = daily_weather_data[:weather].first[:icon]
+    @temperature = (1.8 * (daily_weather_data[:temp][:day] - 273) + 32)
 
   end
 
