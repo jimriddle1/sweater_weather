@@ -8,7 +8,7 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       render json: UserSerializer.create_user(user), status: 201
     else
-      render json: { data: { errors: user.errors.messages.values.join} }, status: 404
+      render json: { data: { errors: user.errors.messages.values.join} }, status: 401
       # binding.pry
     end
   end
