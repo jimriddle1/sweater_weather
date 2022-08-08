@@ -1,18 +1,26 @@
 require 'rails_helper'
 
 RSpec.describe 'User API' do
-  it 'returns an api key when a user is created', :vcr do
-
-    header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+  before(:each) do
+    @header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
 
     body = {
       "email": "whatever@example.com",
       "password": "password",
       "password_confirmation": "password"
-      }
-    post "/api/v1/users", headers:header, params: JSON.generate(body)
+    }
+    post "/api/v1/users", headers:@header, params: JSON.generate(body)
 
-    expect(response.status).to eq(201)
+  end
+
+  it 'returns an api key when a user is created', :vcr do
+    login_body = {
+      "email": "whatever@example.com",
+      "password": "password"
+    }
+    post "/api/v1/sessions", headers:@header, params: JSON.generate(body)
+
+    expect(response).to be_successful
 
     response_body = JSON.parse(response.body, symbolize_names: true)
     data = response_body[:data]
@@ -28,7 +36,7 @@ RSpec.describe 'User API' do
 
   end
 
-  it 'returns an api key when a user is created: sad path passwords do not match', :vcr do
+  xit 'returns an api key when a user is created: sad path passwords do not match', :vcr do
 
     header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
 
@@ -47,7 +55,7 @@ RSpec.describe 'User API' do
 
   end
 
-  it 'returns an api key when a user is created: sad path user already exists', :vcr do
+  xit 'returns an api key when a user is created: sad path user already exists', :vcr do
 
     header = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
 
