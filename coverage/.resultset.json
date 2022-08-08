@@ -6,17 +6,17 @@
           1,
           null,
           1,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
+          4,
           null,
           null,
-          1,
-          1,
-          0,
+          null,
+          4,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -30,6 +30,7 @@
       },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/models/user.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -47,25 +48,23 @@
       },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/user_serializer.rb": {
         "lines": [
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       },
       "/Users/jamesriddle/turing/3module/projects/sweater_weather/app/serializers/restaurant_serializer.rb": {
         "lines": [
@@ -415,6 +414,6 @@
         }
       }
     },
-    "timestamp": 1659986724
+    "timestamp": 1659989121
   }
 }
