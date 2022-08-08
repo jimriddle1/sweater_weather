@@ -20,4 +20,32 @@ RSpec.describe 'ForecastFacade' do
     expect(hourly_weather.count).to eq(8)
   end
 
+  it 'gives me a hourly weather given coordinates for a trip under 48 hours', :vcr do
+
+    road_trip = GeocodeFacade.get_route("Chicago, IL", "Nashville, TN")
+    coordinates = GeocodeService.get_coordinates(road_trip.destination)
+
+    future_forecast_data = ForecastFacade.get_future_forecast(coordinates[:lat], coordinates[:lng], road_trip.travel_time)
+    expect(future_forecast_data).to be_a HourlyWeather
+
+  end
+
+  it 'gives me a daily weather given coordinates for a trip over 48 hours', :vcr do
+
+    road_trip = GeocodeFacade.get_route("New York, NY", "Panama City, Panama")
+    coordinates = GeocodeService.get_coordinates(road_trip.destination)
+
+    future_forecast_data = ForecastFacade.get_future_forecast(coordinates[:lat], coordinates[:lng], road_trip.travel_time)
+    expect(future_forecast_data).to be_a DailyWeather
+  end
+
+  it 'returns nil if the trip does not exist', :vcr do
+
+    road_trip = GeocodeFacade.get_route("New York, NY", "Paris, France")
+    coordinates = GeocodeService.get_coordinates(road_trip.destination)
+
+    future_forecast_data = ForecastFacade.get_future_forecast(coordinates[:lat], coordinates[:lng], road_trip.travel_time)
+    expect(future_forecast_data).to eq(nil)
+  end
+
 end
