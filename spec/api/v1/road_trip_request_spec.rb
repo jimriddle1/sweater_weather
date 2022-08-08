@@ -12,7 +12,8 @@ RSpec.describe 'User API' do
     post "/api/v1/users", headers:@header, params: JSON.generate(body)
 
   end
-  it 'returns weather conditions estimate based on arrival time', :vcr do
+
+  it 'returns weather conditions estimate based on arrival time, under 48 hours', :vcr do
     body = {
       "origin": "Denver,CO",
       "destination": "Pueblo,CO",
@@ -39,6 +40,62 @@ RSpec.describe 'User API' do
     weather_at_eta = road_trip_attributes[:weather_at_eta]
     expect(weather_at_eta[:temperature]).to be_a Float
     expect(weather_at_eta[:conditions]).to be_a String
+
+  end
+
+  it 'returns weather conditions estimate based on arrival time, over 48 hours', :vcr do
+    body = {
+      "origin": "New York, NY",
+      "destination": "Panama City, Panama",
+      "api_key": "#{User.last.api_key}"
+      }
+    post "/api/v1/road_trip", headers:@header, params: JSON.generate(body)
+
+    expect(response.status).to eq(200)
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    data = response_body[:data]
+
+    expect(data[:id]).to eq("null")
+    expect(data[:type]).to eq("road_trip")
+
+    road_trip_attributes = data[:attributes]
+
+    expect(road_trip_attributes).to be_a Hash
+    expect(road_trip_attributes[:start_city]).to be_a String
+    expect(road_trip_attributes[:end_city]).to be_a String
+    expect(road_trip_attributes[:travel_time]).to be_a String
+    expect(road_trip_attributes[:weather_at_eta]).to be_a Hash
+
+    weather_at_eta = road_trip_attributes[:weather_at_eta]
+    expect(weather_at_eta[:temperature]).to be_a Float
+    expect(weather_at_eta[:conditions]).to be_a String
+
+  end
+
+  it 'returns weather conditions estimate based on arrival time, impossible trip', :vcr do
+    body = {
+      "origin": "New York, NY",
+      "destination": "Munich, Germany",
+      "api_key": "#{User.last.api_key}"
+      }
+    post "/api/v1/road_trip", headers:@header, params: JSON.generate(body)
+
+    expect(response.status).to eq(200)
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+    data = response_body[:data]
+
+    expect(data[:id]).to eq("null")
+    expect(data[:type]).to eq("road_trip")
+
+    road_trip_attributes = data[:attributes]
+
+    expect(road_trip_attributes).to be_a Hash
+    expect(road_trip_attributes[:start_city]).to be_a String
+    expect(road_trip_attributes[:end_city]).to be_a String
+    expect(road_trip_attributes[:travel_time]).to eq("impossible")
+    expect(road_trip_attributes[:weather_at_eta]).to eq({})
 
   end
 
