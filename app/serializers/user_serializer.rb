@@ -1,7 +1,6 @@
 class UserSerializer
 
   def self.create_user(user_info)
-    # binding.pry
     {
       "data": {
         "type": "users",

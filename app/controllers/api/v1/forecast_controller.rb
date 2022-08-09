@@ -8,7 +8,6 @@ class Api::V1::ForecastController < ApplicationController
       daily: ForecastFacade.daily_weather(entire_forecast),
       hourly: ForecastFacade.hourly_weather(entire_forecast)
     }
-    # binding.pry
     render json: ForecastSerializer.setup_forecast(forecast)
   end
 

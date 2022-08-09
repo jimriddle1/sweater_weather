@@ -1,7 +1,6 @@
 class RoadTripSerializer
 
   def self.setup_good_road_trip(info)
-    # binding.pry
     {
       "data": {
         "id": "null",

@@ -3,7 +3,6 @@ class GeocodeService
     response = connection.get("geocoding/v1/address/?key=#{ENV['map_quest_key']}&location=#{location}")
     body = JSON.parse(response.body, symbolize_names: true)
     body[:results][0][:locations][0][:latLng]
-    # binding.pry
   end
 
   def self.get_route(origin, destination)

@@ -2,7 +2,6 @@ class RestaurantService
   def self.get_resturant(lat, lon, type)
     response = connection.get("businesses/search?categories=#{type}&location=#{lat}, #{lon}")
     body = JSON.parse(response.body, symbolize_names: true)[:businesses].first
-    # binding.pry
   end
 
   def self.connection
