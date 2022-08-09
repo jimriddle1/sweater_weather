@@ -1,20 +1,43 @@
 
 ---
 
+# Learning Goals
+
+- Expose an API that aggregates data from multiple external APIs
+- Expose an API that requires an authentication token
+- Expose an API for CRUD functionality
+- Determine completion criteria based on the needs of other developers
+- Test both API consumption and exposure, making use of at least one mocking tool (VCR, Webmock, etc)
+
+---
+
+- Available Endpoints:
+  - [Weather Endpoints](#WEATHER)
+  - [User Endpoints](#USER)
+  - [Road Trip Endpoints](#ROADTRIP)
+
+
+
+---
+
+
 # API Usage
 
 
 
 - Available Endpoints:
   - [Weather Endpoints](#WEATHER)
-	- [User Endpoints](#USER)
-	- [Road Trip Endpoints](#ROADTRIP)
+  	- <a href="https://developer.mapquest.com/documentation/geocoding-api/"><strong>Instructions to setup a Mapquest Geocode API »</strong></a>
+	- <a href="https://openweathermap.org/api/one-call-api"><strong>Instructions to setup a OpenWeather API »</strong></a>
+  - [User Endpoints](#USER)
+  - [Road Trip Endpoints](#ROADTRIP)
+  	- <a href="https://developer.mapquest.com/documentation/directions-api/"><strong>Instructions to setup a Mapquest Directions API »</strong></a>
 
 
 
 ---
 
-# USER
+# WEATHER
 
 
 **Login User/ Create and login**
