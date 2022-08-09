@@ -177,26 +177,32 @@ RESPONSE:
 # ROADTRIP
 
 
-**Create Plant**
+**Road Trip Info**
 
-- This endpoint creates a garden for a user 
+- This endpoint creates a road trip given an origin and a destination for a user 
 	
 
 ``` ruby
-[POST]  /api/v1/users/:user_id/gardens/:garden_id/plants
+[POST]  /api/v1/road_trip
 
 
-Required PARAMS: 
- - _json: plant_data.to_json
+Required BODY: 
+ - origin
+ - destination
+ - api_key
 ```
 
  Example:
 
 ``` ruby 
-[POST]  /api/v1/users/:user_id/gardens/:garden_id/plants
+[POST]  /api/v1/users/road_trip
 
- - Params: 
-	 - _json: "{\"user_id\":\"1\",\"garden_id\":\"1\",\"name\":\"Carrot\",\"plant_id\":\"sae2340987dage\"}"
+ - Body: 
+	 {
+	  "origin": "Denver,CO",
+	  "destination": "Pueblo,CO",
+	  "api_key": "abcdefg"
+	}
 ```
 
 RESPONSE:
@@ -204,162 +210,22 @@ RESPONSE:
 ```json
 {
 	"data": {
-		"id": "2",
-		"type": "plant",
+		"id": "null",
+		"type": "road_trip",
 		"attributes": {
-			"name": "Carrot",
-			"plant_id": "sae2340987dage",
-			"date_planted": null,
-			"moon_phase": null,
-			"date_matured": null,
-			"bounty_amount": null,
-			"pruning_behaviors": null,
-			"notes": null,
-			"garden_id": 1
-		}
-	}
-}
-```
----
-
-
-**Garden Plants**
-
-- This endpoint returns all the plants for a garden
-	
-
-``` ruby
-[GET] /api/v1/users/:user_id/gardens/:garden_id/plants
-```
-
-RESPONSE:
-
-```json
-{
-	"data": [
-		{
-			"id": "1",
-			"type": "plant",
-			"attributes": {
-				"name": "Carrot",
-				"plant_id": "sae2340987dage",
-				"date_planted": null,
-				"moon_phase": null,
-				"date_matured": null,
-				"bounty_amount": null,
-				"pruning_behaviors": null,
-				"notes": null,
-				"garden_id": 1
-			}
-		},
-		{
-			"id": "2",
-			"type": "plant",
-			"attributes": {
-				"name": "Carrot",
-				"plant_id": "sae2340987dage",
-				"date_planted": null,
-				"moon_phase": null,
-				"date_matured": null,
-				"bounty_amount": null,
-				"pruning_behaviors": null,
-				"notes": null,
-				"garden_id": 1
+			"start_city": "Denver,CO",
+			"end_city": "Pueblo,CO",
+			"travel_time": "01:45:23",
+			"weather_at_eta": {
+				"temperature": 85.7,
+				"conditions": "clear sky"
 			}
 		}
-	]
-
-}
-```
----
-
-**Plant Show**
-
-- This endpoint returns a particular plant
-	
-
-``` ruby
-[GET] /api/v1/users/:user_id/gardens/:garden_id/plants/:id
-```
-
-RESPONSE:
-
-```json
-{
-	"data": {
-		"id": "2",
-		"type": "plant",
-		"attributes": {
-			"name": "Carrot",
-			"plant_id": "sae2340987dage",
-			"date_planted": null,
-			"moon_phase": null,
-			"date_matured": null,
-			"bounty_amount": null,
-			"pruning_behaviors": null,
-			"notes": null,
-			"garden_id": 1
-		}
 	}
 }
 ```
 ---
-**Plant Destroy**
 
-- This endpoint destroys a particular plant
-	
-
-``` ruby
-[DELETE] /api/v1/users/:user_id/gardens/:garden_id/plants/:id
-```
-
-RESPONSE:
-
-```json
-No Response
-```
----
-**Plant Update**
-
-- This endpoint updates a particular plant
-	
-
-``` ruby
-[PATCH] /api/v1/users/:user_id/gardens/:garden_id/plants/:id
-```
-
- Example:
-
-``` ruby 
-[PATCH] /api/v1/users/:user_id/gardens/:garden_id/plants/:id
-
-
- - Params: 
-	 - _json : "{\"moon_phase\":\"Full\"}"
-```
-
-RESPONSE:
-
-```json
-{
-	"data": {
-		"id": "2",
-		"type": "plant",
-		"attributes": {
-			"name": "Carrot",
-			"plant_id": "sae2340987dage",
-			"date_planted": null,
-			"moon_phase": "Full",
-			"date_matured": null,
-			"bounty_amount": null,
-			"pruning_behaviors": null,
-			"notes": null,
-			"garden_id": 1
-		}
-	}
-}
-```
----
 
 # Feel like messing around?
 
@@ -413,12 +279,3 @@ $ bundle exec rspec
 $ rails s
 
 ```
-
-  
-
-6. In your browser, visit ['localhost:3000/`](http://localhost:3000/) to see the app in action.
-
-
-
-
-
