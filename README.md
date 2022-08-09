@@ -11,15 +11,6 @@
 
 ---
 
-- Available Endpoints:
-  - [Weather Endpoints](#WEATHER)
-  - [User Endpoints](#USER)
-  - [Road Trip Endpoints](#ROADTRIP)
-
-
-
----
-
 
 # API Usage
 
