@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get '/munchies', to: 'restaurant#show'
       post '/users', to: 'users#create'
       post '/sessions', to: 'sessions#login'
+      post '/road_trip', to: 'road_trips#show'
     end
   end
 

@@ -9,4 +9,10 @@ RSpec.describe 'GeocodeFacade' do
     expect(geocode).to be_a Geocode
   end
 
+  it 'gives me a roadtrip object given an origin and destination', :vcr do
+    roadtrip = GeocodeFacade.get_route("Chicago, IL", "Nashville, TN")
+
+    expect(roadtrip).to be_a RoadTrip
+  end
+
 end

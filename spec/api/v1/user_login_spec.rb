@@ -24,7 +24,6 @@ RSpec.describe 'User API' do
 
     response_body = JSON.parse(response.body, symbolize_names: true)
     data = response_body[:data]
-    # binding.pry
 
     expect(data[:id]).to be_a String
     expect(data[:type]).to eq("users")

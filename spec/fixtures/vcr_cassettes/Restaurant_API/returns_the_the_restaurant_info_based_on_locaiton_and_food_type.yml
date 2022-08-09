@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 08 Aug 2022 19:03:08 GMT
+      - Mon, 08 Aug 2022 23:33:11 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1030'
+      - '1031'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 08 Aug 2022 19:03:08 GMT
+      - Mon, 08 Aug 2022 23:33:11 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=02C7684E721F988303EF5B1EB76D7199; Path=/; HttpOnly
+      - JSESSIONID=96DA87DCB3FD1C63127213BCDF52D647; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"chicago,il,"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Chicago","adminArea5Type":"City","adminArea4":"Cook
-        County","adminArea4Type":"County","adminArea3":"IL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039507","unknownInput":"","type":"s","latLng":{"lat":41.883229,"lng":-87.632398},"displayLatLng":{"lat":41.883229,"lng":-87.632398},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=jySLMdxKQGR611P3LcbkFXOei7PeKF4c&type=map&size=225,160&locations=41.883229,-87.632398|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-951752871"}]}]}'
-  recorded_at: Mon, 08 Aug 2022 19:03:08 GMT
+        County","adminArea4Type":"County","adminArea3":"IL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039507","unknownInput":"","type":"s","latLng":{"lat":41.883229,"lng":-87.632398},"displayLatLng":{"lat":41.883229,"lng":-87.632398},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=jySLMdxKQGR611P3LcbkFXOei7PeKF4c&type=map&size=225,160&locations=41.883229,-87.632398|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1084471266"}]}]}'
+  recorded_at: Mon, 08 Aug 2022 23:33:11 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=a8d2653ddadbdd143811a2815e3c9ce5&exclude=minutely,alerts&lat=41.883229&lon=-87.632398
@@ -74,11 +74,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 08 Aug 2022 19:03:08 GMT
+      - Mon, 08 Aug 2022 23:33:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '17763'
+      - '17698'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -91,17 +91,13 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":41.8832,"lon":-87.6324,"timezone":"America/Chicago","timezone_offset":-18000,"current":{"dt":1659985388,"sunrise":1659955886,"sunset":1660006857,"temp":299.99,"feels_like":302.37,"pressure":1014,"humidity":78,"dew_point":295.83,"uvi":2.78,"clouds":100,"visibility":10000,"wind_speed":4.63,"wind_deg":270,"wind_gust":10.29,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}]},"hourly":[{"dt":1659985200,"temp":299.99,"feels_like":302.37,"pressure":1014,"humidity":78,"dew_point":295.83,"uvi":2.78,"clouds":100,"visibility":10000,"wind_speed":5.53,"wind_deg":298,"wind_gust":8.01,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.71},{"dt":1659988800,"temp":299.43,"feels_like":299.43,"pressure":1014,"humidity":80,"dew_point":295.7,"uvi":2.19,"clouds":99,"visibility":10000,"wind_speed":6.59,"wind_deg":351,"wind_gust":8.24,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.71},{"dt":1659992400,"temp":297.79,"feels_like":298.45,"pressure":1014,"humidity":82,"dew_point":294.51,"uvi":1.46,"clouds":98,"visibility":10000,"wind_speed":7.51,"wind_deg":1,"wind_gust":9.16,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.73},{"dt":1659996000,"temp":295.95,"feels_like":296.48,"pressure":1014,"humidity":84,"dew_point":293.11,"uvi":0.3,"clouds":98,"visibility":10000,"wind_speed":7.16,"wind_deg":4,"wind_gust":9.39,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10d"}],"pop":0.69,"rain":{"1h":0.17}},{"dt":1659999600,"temp":294.57,"feels_like":294.96,"pressure":1014,"humidity":84,"dew_point":291.76,"uvi":0.12,"clouds":98,"visibility":10000,"wind_speed":6.39,"wind_deg":360,"wind_gust":8.35,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.69},{"dt":1660003200,"temp":293.26,"feels_like":293.47,"pressure":1014,"humidity":82,"dew_point":290.15,"uvi":0.03,"clouds":98,"visibility":10000,"wind_speed":6.11,"wind_deg":358,"wind_gust":8.07,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.69},{"dt":1660006800,"temp":293.39,"feels_like":293.56,"pressure":1015,"humidity":80,"dew_point":289.9,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":5.87,"wind_deg":9,"wind_gust":7.84,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1660010400,"temp":293.41,"feels_like":293.55,"pressure":1016,"humidity":79,"dew_point":289.54,"uvi":0,"clouds":97,"visibility":10000,"wind_speed":5.91,"wind_deg":15,"wind_gust":7.87,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1660014000,"temp":293.51,"feels_like":293.53,"pressure":1016,"humidity":74,"dew_point":288.73,"uvi":0,"clouds":96,"visibility":10000,"wind_speed":6.03,"wind_deg":18,"wind_gust":8.16,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1660017600,"temp":293.68,"feels_like":293.64,"pressure":1017,"humidity":71,"dew_point":288.21,"uvi":0,"clouds":89,"visibility":10000,"wind_speed":4.98,"wind_deg":24,"wind_gust":7.32,"weather":[{"id":804,"main":"Clouds","description":"overcast
+      string: '{"lat":41.8832,"lon":-87.6324,"timezone":"America/Chicago","timezone_offset":-18000,"current":{"dt":1660001592,"sunrise":1659955886,"sunset":1660006857,"temp":292.18,"feels_like":292.44,"pressure":1016,"humidity":88,"dew_point":290.15,"uvi":0.03,"clouds":98,"visibility":10000,"wind_speed":3.13,"wind_deg":52,"wind_gust":3.58,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}]},"hourly":[{"dt":1659999600,"temp":292.39,"feels_like":292.64,"pressure":1016,"humidity":87,"dew_point":290.17,"uvi":0.12,"clouds":98,"visibility":10000,"wind_speed":6.39,"wind_deg":360,"wind_gust":8.35,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.69},{"dt":1660003200,"temp":292.18,"feels_like":292.44,"pressure":1016,"humidity":88,"dew_point":290.15,"uvi":0.03,"clouds":98,"visibility":10000,"wind_speed":6.11,"wind_deg":358,"wind_gust":8.07,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.69},{"dt":1660006800,"temp":292.42,"feels_like":292.65,"pressure":1016,"humidity":86,"dew_point":290.02,"uvi":0,"clouds":98,"visibility":10000,"wind_speed":5.87,"wind_deg":9,"wind_gust":7.84,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1660010400,"temp":292.67,"feels_like":292.87,"pressure":1016,"humidity":84,"dew_point":289.9,"uvi":0,"clouds":98,"visibility":10000,"wind_speed":5.91,"wind_deg":15,"wind_gust":7.87,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1660014000,"temp":292.98,"feels_like":293.08,"pressure":1016,"humidity":79,"dew_point":289.23,"uvi":0,"clouds":97,"visibility":10000,"wind_speed":6.03,"wind_deg":18,"wind_gust":8.16,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0},{"dt":1660017600,"temp":293.38,"feels_like":293.39,"pressure":1017,"humidity":74,"dew_point":288.6,"uvi":0,"clouds":91,"visibility":10000,"wind_speed":4.98,"wind_deg":24,"wind_gust":7.32,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04n"}],"pop":0},{"dt":1660021200,"temp":293.29,"feels_like":293.27,"pressure":1017,"humidity":73,"dew_point":288.24,"uvi":0,"clouds":75,"visibility":10000,"wind_speed":4.19,"wind_deg":24,"wind_gust":6.73,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04n"}],"pop":0},{"dt":1660024800,"temp":293.24,"feels_like":293.21,"pressure":1017,"humidity":73,"dew_point":288.26,"uvi":0,"clouds":64,"visibility":10000,"wind_speed":4.33,"wind_deg":23,"wind_gust":7.07,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04n"}],"pop":0},{"dt":1660028400,"temp":293.14,"feels_like":293.13,"pressure":1017,"humidity":74,"dew_point":288.32,"uvi":0,"clouds":22,"visibility":10000,"wind_speed":4.42,"wind_deg":24,"wind_gust":7.26,"weather":[{"id":801,"main":"Clouds","description":"few
@@ -140,8 +136,12 @@ http_interactions:
         sky","icon":"01d"}],"pop":0},{"dt":1660147200,"temp":296.79,"feels_like":296.38,"pressure":1021,"humidity":45,"dew_point":283.63,"uvi":6.53,"clouds":0,"visibility":10000,"wind_speed":2.25,"wind_deg":16,"wind_gust":2.39,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1660150800,"temp":297.66,"feels_like":297.26,"pressure":1021,"humidity":42,"dew_point":283.29,"uvi":7.97,"clouds":0,"visibility":10000,"wind_speed":2.26,"wind_deg":21,"wind_gust":2.41,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1660154400,"temp":298.5,"feels_like":298.11,"pressure":1020,"humidity":39,"dew_point":282.97,"uvi":8.39,"clouds":0,"visibility":10000,"wind_speed":2.61,"wind_deg":31,"wind_gust":2.8,"weather":[{"id":800,"main":"Clear","description":"clear
-        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1659978000,"sunrise":1659955886,"sunset":1660006857,"moonrise":1659998520,"moonset":1659939960,"moon_phase":0.37,"temp":{"day":300.82,"min":293.26,"max":300.97,"night":293.68,"eve":294.57,"morn":296.43},"feels_like":{"day":303.67,"night":293.64,"eve":294.96,"morn":297.32},"pressure":1013,"humidity":74,"dew_point":295.76,"wind_speed":7.51,"wind_deg":1,"wind_gust":12.23,"weather":[{"id":501,"main":"Rain","description":"moderate
-        rain","icon":"10d"}],"clouds":98,"pop":1,"rain":8.34,"uvi":5.72},{"dt":1660064400,"sunrise":1660042349,"sunset":1660093180,"moonrise":1660088700,"moonset":1660029900,"moon_phase":0.41,"temp":{"day":295.5,"min":292.62,"max":295.85,"night":292.79,"eve":295.01,"morn":292.62},"feels_like":{"day":295.41,"night":292.53,"eve":294.82,"morn":292.61},"pressure":1019,"humidity":62,"dew_point":287.68,"wind_speed":4.87,"wind_deg":40,"wind_gust":7.43,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        sky","icon":"01d"}],"pop":0},{"dt":1660158000,"temp":299.03,"feels_like":298.64,"pressure":1020,"humidity":37,"dew_point":282.8,"uvi":7.7,"clouds":0,"visibility":10000,"wind_speed":2.75,"wind_deg":45,"wind_gust":2.81,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660161600,"temp":299.22,"feels_like":299.22,"pressure":1019,"humidity":37,"dew_point":282.84,"uvi":6.05,"clouds":0,"visibility":10000,"wind_speed":2.66,"wind_deg":58,"wind_gust":2.71,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660165200,"temp":299.19,"feels_like":299.19,"pressure":1019,"humidity":37,"dew_point":283.13,"uvi":4,"clouds":0,"visibility":10000,"wind_speed":2.55,"wind_deg":62,"wind_gust":2.64,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1660168800,"temp":298.97,"feels_like":298.63,"pressure":1019,"humidity":39,"dew_point":283.74,"uvi":2.1,"clouds":0,"visibility":10000,"wind_speed":2.54,"wind_deg":63,"wind_gust":2.79,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1659978000,"sunrise":1659955886,"sunset":1660006857,"moonrise":1659998520,"moonset":1659939960,"moon_phase":0.37,"temp":{"day":302.07,"min":292.18,"max":302.07,"night":293.38,"eve":292.39,"morn":296.43},"feels_like":{"day":305.52,"night":293.39,"eve":292.64,"morn":297.32},"pressure":1011,"humidity":69,"dew_point":295.76,"wind_speed":7.51,"wind_deg":1,"wind_gust":12.23,"weather":[{"id":501,"main":"Rain","description":"moderate
+        rain","icon":"10d"}],"clouds":96,"pop":1,"rain":10.09,"uvi":5.72},{"dt":1660064400,"sunrise":1660042349,"sunset":1660093180,"moonrise":1660088700,"moonset":1660029900,"moon_phase":0.41,"temp":{"day":295.5,"min":292.62,"max":295.85,"night":292.79,"eve":295.01,"morn":292.62},"feels_like":{"day":295.41,"night":292.53,"eve":294.82,"morn":292.61},"pressure":1019,"humidity":62,"dew_point":287.68,"wind_speed":4.87,"wind_deg":40,"wind_gust":7.43,"weather":[{"id":802,"main":"Clouds","description":"scattered
         clouds","icon":"03d"}],"clouds":34,"pop":0,"uvi":8.09},{"dt":1660150800,"sunrise":1660128811,"sunset":1660179502,"moonrise":1660178220,"moonset":1660120620,"moon_phase":0.45,"temp":{"day":297.66,"min":291.26,"max":299.22,"night":295.25,"eve":298.31,"morn":291.26},"feels_like":{"day":297.26,"night":294.95,"eve":297.98,"morn":290.85},"pressure":1021,"humidity":42,"dew_point":283.29,"wind_speed":2.75,"wind_deg":45,"wind_gust":2.81,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":8.39},{"dt":1660237200,"sunrise":1660215274,"sunset":1660265822,"moonrise":1660267080,"moonset":1660211760,"moon_phase":0.5,"temp":{"day":296.75,"min":293.72,"max":296.75,"night":293.72,"eve":294.65,"morn":294.6},"feels_like":{"day":296.37,"night":293.19,"eve":294.19,"morn":295.02},"pressure":1022,"humidity":46,"dew_point":284.28,"wind_speed":6.46,"wind_deg":32,"wind_gust":9.22,"weather":[{"id":802,"main":"Clouds","description":"scattered
         clouds","icon":"03d"}],"clouds":32,"pop":0,"uvi":8.02},{"dt":1660323600,"sunrise":1660301737,"sunset":1660352140,"moonrise":1660355400,"moonset":1660303020,"moon_phase":0.52,"temp":{"day":296.09,"min":292.44,"max":297.02,"night":293.98,"eve":295.36,"morn":292.44},"feels_like":{"day":295.59,"night":293.61,"eve":294.86,"morn":291.86},"pressure":1024,"humidity":44,"dew_point":282.38,"wind_speed":4.21,"wind_deg":49,"wind_gust":6.65,"weather":[{"id":804,"main":"Clouds","description":"overcast
@@ -149,7 +149,7 @@ http_interactions:
         rain","icon":"10d"}],"clouds":91,"pop":0.81,"rain":1.1,"uvi":0.27},{"dt":1660496400,"sunrise":1660474662,"sunset":1660524775,"moonrise":1660531320,"moonset":1660485000,"moon_phase":0.6,"temp":{"day":300.18,"min":292.01,"max":301.39,"night":297.54,"eve":299.04,"morn":292.01},"feels_like":{"day":301.42,"night":298.15,"eve":299.62,"morn":292.3},"pressure":1009,"humidity":62,"dew_point":292.28,"wind_speed":7.99,"wind_deg":184,"wind_gust":16.04,"weather":[{"id":501,"main":"Rain","description":"moderate
         rain","icon":"10d"}],"clouds":9,"pop":1,"rain":12.74,"uvi":1},{"dt":1660582800,"sunrise":1660561125,"sunset":1660611090,"moonrise":1660619100,"moonset":1660575720,"moon_phase":0.64,"temp":{"day":298.83,"min":295.31,"max":299.45,"night":296.28,"eve":297.68,"morn":295.31},"feels_like":{"day":299.26,"night":296.87,"eve":298.17,"morn":295.75},"pressure":1011,"humidity":69,"dew_point":292.57,"wind_speed":3.8,"wind_deg":180,"wind_gust":5.8,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"clouds":63,"pop":0.02,"uvi":1}]}'
-  recorded_at: Mon, 08 Aug 2022 19:03:08 GMT
+  recorded_at: Mon, 08 Aug 2022 23:33:12 GMT
 - request:
     method: get
     uri: https://api.yelp.com/v3/businesses/search?categories=mexican&location=41.883229,%20-87.632398
@@ -174,38 +174,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Zipkin-Id:
-      - 8c101424075e7dcf
-      Ratelimit-Dailylimit:
-      - '5000'
-      Ratelimit-Remaining:
-      - '4907'
-      X-B3-Sampled:
-      - '0'
-      Ratelimit-Resettime:
-      - '2022-08-09T00:00:00+00:00'
       Server:
       - envoy
       X-Routing-Service:
-      - routing-main--useast1-5db947469f-n4x5f; site=public_api_v3
+      - routing-canary--useast1-b99cf5bd6-c9w98; site=public_api_v3
+      Ratelimit-Remaining:
+      - '4897'
+      X-Zipkin-Id:
+      - 66c9889c4ca0022b
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Resettime:
+      - '2022-08-09T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
       X-Cloudmap:
       - routing_useast1
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-85-173-useast1aprod
+      - 10-65-103-189-useast1aprod
       X-Extlb:
-      - 10-65-85-173-useast1aprod
+      - 10-65-103-189-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 08 Aug 2022 19:03:09 GMT
+      - Mon, 08 Aug 2022 23:33:13 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-chi-kigq8000072-CHI
+      - cache-chi-klot8100088-CHI
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -222,7 +222,7 @@ http_interactions:
         "review_count": 3791, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "sandwiches",
         "title": "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 41.890969,
-        "longitude": -87.630776}, "transactions": ["delivery", "pickup"], "price":
+        "longitude": -87.630776}, "transactions": ["pickup", "delivery"], "price":
         "$$", "location": {"address1": "449 N Clark St", "address2": "", "address3":
         "", "city": "Chicago", "zip_code": "60654", "country": "US", "state": "IL",
         "display_address": ["449 N Clark St", "Chicago, IL 60654"]}, "phone": "+13127232131",
@@ -232,8 +232,8 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/frontera-grill-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 2444, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "desserts", "title": "Desserts"}], "rating": 4.0, "coordinates":
-        {"latitude": 41.8905699, "longitude": -87.63079}, "transactions": ["delivery",
-        "pickup"], "price": "$$$", "location": {"address1": "445 N Clark St", "address2":
+        {"latitude": 41.8905699, "longitude": -87.63079}, "transactions": ["pickup",
+        "delivery"], "price": "$$$", "location": {"address1": "445 N Clark St", "address2":
         "", "address3": "", "city": "Chicago", "zip_code": "60654", "country": "US",
         "state": "IL", "display_address": ["445 N Clark St", "Chicago, IL 60654"]},
         "phone": "+13126611434", "display_phone": "(312) 661-1434", "distance": 819.7639917250884},
@@ -243,7 +243,7 @@ http_interactions:
         "review_count": 1021, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "sandwiches",
         "title": "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 41.88904918696022,
-        "longitude": -87.63043653497112}, "transactions": ["delivery", "pickup"],
+        "longitude": -87.63043653497112}, "transactions": ["pickup", "delivery"],
         "price": "$$", "location": {"address1": "65 W Kinzie St", "address2": null,
         "address3": "", "city": "Chicago", "zip_code": "60654", "country": "US", "state":
         "IL", "display_address": ["65 W Kinzie St", "Chicago, IL 60654"]}, "phone":
@@ -254,7 +254,7 @@ http_interactions:
         "review_count": 2293, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "lounges", "title": "Lounges"}, {"alias": "cocktailbars", "title":
         "Cocktail Bars"}], "rating": 3.5, "coordinates": {"latitude": 41.8894499,
-        "longitude": -87.63162}, "transactions": ["delivery", "pickup"], "price":
+        "longitude": -87.63162}, "transactions": ["pickup", "delivery"], "price":
         "$$", "location": {"address1": "108 W Kinzie St", "address2": "", "address3":
         "", "city": "Chicago", "zip_code": "60654", "country": "US", "state": "IL",
         "display_address": ["108 W Kinzie St", "Chicago, IL 60654"]}, "phone": "+13123299555",
@@ -265,7 +265,7 @@ http_interactions:
         "review_count": 854, "categories": [{"alias": "sportsbars", "title": "Sports
         Bars"}, {"alias": "tacos", "title": "Tacos"}, {"alias": "sandwiches", "title":
         "Sandwiches"}], "rating": 4.0, "coordinates": {"latitude": 41.8898321, "longitude":
-        -87.6285441}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -87.6285441}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "9 W Hubbard St", "address2": "Fl 1", "address3": "", "city":
         "Chicago", "zip_code": "60654", "country": "US", "state": "IL", "display_address":
         ["9 W Hubbard St", "Fl 1", "Chicago, IL 60654"]}, "phone": "+13126440004",
@@ -273,7 +273,7 @@ http_interactions:
         "UsuuTuxeqeiUXSgOMnJJKg", "alias": "topolobampo-chicago", "name": "Topolobampo",
         "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wptxIrqMv-1q3i0ayFtoPQ/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/topolobampo-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
-        "review_count": 1029, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "review_count": 1028, "categories": [{"alias": "mexican", "title": "Mexican"}],
         "rating": 3.5, "coordinates": {"latitude": 41.8905699, "longitude": -87.63079},
         "transactions": ["delivery"], "price": "$$$$", "location": {"address1": "445
         N Clark St", "address2": null, "address3": "", "city": "Chicago", "zip_code":
@@ -285,7 +285,7 @@ http_interactions:
         "review_count": 813, "categories": [{"alias": "korean", "title": "Korean"},
         {"alias": "mexican", "title": "Mexican"}, {"alias": "asianfusion", "title":
         "Asian Fusion"}], "rating": 4.0, "coordinates": {"latitude": 41.8959233394607,
-        "longitude": -87.6313957501562}, "transactions": ["delivery", "pickup"], "price":
+        "longitude": -87.6313957501562}, "transactions": ["pickup", "delivery"], "price":
         "$", "location": {"address1": "738 N Clark St", "address2": "", "address3":
         "", "city": "Chicago", "zip_code": "60654", "country": "US", "state": "IL",
         "display_address": ["738 N Clark St", "Chicago, IL 60654"]}, "phone": "+13122651607",
@@ -296,7 +296,7 @@ http_interactions:
         "review_count": 839, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "bars", "title": "Bars"}, {"alias": "desserts", "title": "Desserts"}],
         "rating": 3.5, "coordinates": {"latitude": 41.885611513814354, "longitude":
-        -87.6250376}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -87.6250376}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "75 E Lake St", "address2": "", "address3": "", "city": "Chicago",
         "zip_code": "60601", "country": "US", "state": "IL", "display_address": ["75
         E Lake St", "Chicago, IL 60601"]}, "phone": "+13129293601", "display_phone":
@@ -306,7 +306,7 @@ http_interactions:
         "review_count": 1699, "categories": [{"alias": "newamerican", "title": "American
         (New)"}, {"alias": "tacos", "title": "Tacos"}, {"alias": "vegetarian", "title":
         "Vegetarian"}], "rating": 4.0, "coordinates": {"latitude": 41.90224, "longitude":
-        -87.62851}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -87.62851}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "1110 N State St", "address2": "", "address3": "", "city": "Chicago",
         "zip_code": "60610", "country": "US", "state": "IL", "display_address": ["1110
         N State St", "Chicago, IL 60610"]}, "phone": "+13127632654", "display_phone":
@@ -317,7 +317,7 @@ http_interactions:
         "review_count": 558, "categories": [{"alias": "seafood", "title": "Seafood"},
         {"alias": "mexican", "title": "Mexican"}, {"alias": "wine_bars", "title":
         "Wine Bars"}], "rating": 4.0, "coordinates": {"latitude": 41.88465, "longitude":
-        -87.65007}, "transactions": ["delivery", "pickup"], "price": "$$$", "location":
+        -87.65007}, "transactions": ["pickup", "delivery"], "price": "$$$", "location":
         {"address1": "900-902 W Randolph St", "address2": "", "address3": "", "city":
         "Chicago", "zip_code": "60607", "country": "US", "state": "IL", "display_address":
         ["900-902 W Randolph St", "Chicago, IL 60607"]}, "phone": "+13127331975",
@@ -327,7 +327,7 @@ http_interactions:
         false, "url": "https://www.yelp.com/biz/tzuco-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 448, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "french", "title": "French"}], "rating": 4.0, "coordinates": {"latitude":
-        41.89529, "longitude": -87.62872}, "transactions": ["delivery", "pickup"],
+        41.89529, "longitude": -87.62872}, "transactions": ["pickup", "delivery"],
         "price": "$$$", "location": {"address1": "720 N State St", "address2": "",
         "address3": null, "city": "Chicago", "zip_code": "60654", "country": "US",
         "state": "IL", "display_address": ["720 N State St", "Chicago, IL 60654"]},
@@ -337,18 +337,18 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/la-josie-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 623, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "cocktailbars", "title": "Cocktail Bars"}], "rating": 4.0, "coordinates":
-        {"latitude": 41.8848, "longitude": -87.64729}, "transactions": ["delivery",
-        "pickup"], "price": "$$", "location": {"address1": "740 W Randolph St", "address2":
-        "", "address3": null, "city": "Chicago", "zip_code": "60661", "country": "US",
-        "state": "IL", "display_address": ["740 W Randolph St", "Chicago, IL 60661"]},
-        "phone": "+13129292900", "display_phone": "(312) 929-2900", "distance": 1254.2111672615201},
-        {"id": "PWVtMaCg786lf47l8Dvjnw", "alias": "taco-maya-chicago", "name": "Taco
-        Maya", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/u3Vkt-X3BBVY00qFR5qMfw/o.jpg",
+        {"latitude": 41.8848, "longitude": -87.64729}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "740 W Randolph St",
+        "address2": "", "address3": null, "city": "Chicago", "zip_code": "60661",
+        "country": "US", "state": "IL", "display_address": ["740 W Randolph St", "Chicago,
+        IL 60661"]}, "phone": "+13129292900", "display_phone": "(312) 929-2900", "distance":
+        1254.2111672615201}, {"id": "PWVtMaCg786lf47l8Dvjnw", "alias": "taco-maya-chicago",
+        "name": "Taco Maya", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/u3Vkt-X3BBVY00qFR5qMfw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/taco-maya-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 406, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
         "tacos", "title": "Tacos"}, {"alias": "hotdogs", "title": "Fast Food"}], "rating":
         4.0, "coordinates": {"latitude": 41.871198376219645, "longitude": -87.6273083},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "823 S State St", "address2": null, "address3": null, "city": "Chicago", "zip_code":
         "60605", "country": "US", "state": "IL", "display_address": ["823 S State
         St", "Chicago, IL 60605"]}, "phone": "+13125830806", "display_phone": "(312)
@@ -359,7 +359,7 @@ http_interactions:
         "review_count": 146, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "halal", "title": "Halal"}, {"alias": "tradamerican", "title": "American
         (Traditional)"}], "rating": 4.0, "coordinates": {"latitude": 41.8852898915081,
-        "longitude": -87.6340918936048}, "transactions": ["delivery", "pickup"], "price":
+        "longitude": -87.6340918936048}, "transactions": ["pickup", "delivery"], "price":
         "$", "location": {"address1": "180 N Wells St", "address2": "", "address3":
         "", "city": "Chicago", "zip_code": "60606", "country": "US", "state": "IL",
         "display_address": ["180 N Wells St", "Chicago, IL 60606"]}, "phone": "+13126313802",
@@ -369,7 +369,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/flacos-tacos-chicago?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 877, "categories": [{"alias": "mexican", "title": "Mexican"}],
         "rating": 3.5, "coordinates": {"latitude": 41.8728063, "longitude": -87.6289506},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "725 S Dearborn St", "address2": "", "address3": "", "city": "Chicago", "zip_code":
         "60605", "country": "US", "state": "IL", "display_address": ["725 S Dearborn
         St", "Chicago, IL 60605"]}, "phone": "+13129228226", "display_phone": "(312)
@@ -379,7 +379,7 @@ http_interactions:
         "review_count": 769, "categories": [{"alias": "latin", "title": "Latin American"},
         {"alias": "mexican", "title": "Mexican"}, {"alias": "bars", "title": "Bars"}],
         "rating": 4.0, "coordinates": {"latitude": 41.8857, "longitude": -87.6519851},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "201 N Morgan St", "address2": null, "address3": "", "city": "Chicago", "zip_code":
         "60607", "country": "US", "state": "IL", "display_address": ["201 N Morgan
         St", "Chicago, IL 60607"]}, "phone": "+13128889485", "display_phone": "(312)
@@ -400,7 +400,7 @@ http_interactions:
         "review_count": 740, "categories": [{"alias": "mexican", "title": "Mexican"},
         {"alias": "bars", "title": "Bars"}, {"alias": "danceclubs", "title": "Dance
         Clubs"}], "rating": 3.0, "coordinates": {"latitude": 41.8900083, "longitude":
-        -87.628553}, "transactions": ["pickup", "delivery"], "price": "$$$$", "location":
+        -87.628553}, "transactions": ["delivery", "pickup"], "price": "$$$$", "location":
         {"address1": "15 W Hubbard St", "address2": "", "address3": "", "city": "Chicago",
         "zip_code": "60654", "country": "US", "state": "IL", "display_address": ["15
         W Hubbard St", "Chicago, IL 60654"]}, "phone": "+13125486841", "display_phone":
@@ -411,7 +411,7 @@ http_interactions:
         "review_count": 53, "categories": [{"alias": "tacos", "title": "Tacos"}, {"alias":
         "vietnamese", "title": "Vietnamese"}, {"alias": "thai", "title": "Thai"}],
         "rating": 4.5, "coordinates": {"latitude": 41.8767111, "longitude": -87.6332149},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "400 S Financial Pl", "address2": null, "address3": null, "city": "Chicago",
         "zip_code": "60605", "country": "US", "state": "IL", "display_address": ["400
         S Financial Pl", "Chicago, IL 60605"]}, "phone": "+17736960144", "display_phone":
@@ -421,11 +421,11 @@ http_interactions:
         false, "url": "https://www.yelp.com/biz/dos-toros-taqueria-chicago-2?adjust_creative=D-c_jjXAbApI7wGnEhK3og&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=D-c_jjXAbApI7wGnEhK3og",
         "review_count": 172, "categories": [{"alias": "mexican", "title": "Mexican"}],
         "rating": 3.5, "coordinates": {"latitude": 41.88217642294875, "longitude":
-        -87.62914245980112}, "transactions": ["delivery", "pickup"], "price": "$$",
+        -87.62914245980112}, "transactions": ["pickup", "delivery"], "price": "$$",
         "location": {"address1": "1 N Dearborn St", "address2": "", "address3": null,
         "city": "Chicago", "zip_code": "60602", "country": "US", "state": "IL", "display_address":
         ["1 N Dearborn St", "Chicago, IL 60602"]}, "phone": "+17734911735", "display_phone":
         "(773) 491-1735", "distance": 284.73559077538215}], "total": 112, "region":
         {"center": {"longitude": -87.63227462768555, "latitude": 41.88323434397255}}}'
-  recorded_at: Mon, 08 Aug 2022 19:03:09 GMT
+  recorded_at: Mon, 08 Aug 2022 23:33:13 GMT
 recorded_with: VCR 6.1.0
