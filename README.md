@@ -33,7 +33,7 @@
 
 **Get Weather**
 
-- This endpoint consumes data returned from Geocode and OpenWeather, and returns current daily and hourly weather of a given location. 
+- This endpoint consumes data returned from MapquestGeocode and OpenWeather, and returns current daily and hourly weather of a given location. 
 	
 
 ``` ruby
@@ -179,7 +179,7 @@ RESPONSE:
 
 **Road Trip Info**
 
-- This endpoint creates a road trip given an origin and a destination for a user 
+- This endpoint consumes data returned from MapquestDirections and OpenWeather, and returns future weather of a given destination. 
 	
 
 ``` ruby
