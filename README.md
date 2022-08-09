@@ -44,7 +44,7 @@
  Example:
 
 ``` ruby 
-[POST] /api/v1/forecast?location=chicago,il
+[GET] /api/v1/forecast?location=chicago,il
 
 
 ```
@@ -84,48 +84,22 @@ RESPONSE:
 ```
 ---
 
-
-**Find User**
-
-- This endpoint finds an existing user, based on user id
-
-``` ruby
-[GET] /api/v1/users/:id
-```
-
-RESPONSE:
-
-```json
-{
-	"data": {
-		"id": "3",
-		"type": "user",
-		"attributes": {
-			"name": "Jennifer ",
-			"email": "jennnnnn@gmail.com",
-			"image": 
- "https://lh3.googleusercontent.com/a-/AFdZucr_zffBdhJaydFkdXeeHkhe2BzmVNKGIE-Ozwh=s96-c"
-		}
-	}
-}
-``````
----
+# USER
 
 
-# Garden
+**Create User**
 
-
-**Create Garden**
-
-- This endpoint creates a garden for a user 
+- This endpoint creates a user 
 	
 
 ``` ruby
 [POST] /api/v1/users/:id/gardens
 
 
-Required PARAMS: 
- - _json: user_data.to_json
+Required BDOY: 
+ - email
+ - password
+ - password confirmation
 ```
 
  Example:
@@ -133,8 +107,12 @@ Required PARAMS:
 ``` ruby 
 [POST] /api/v1/users/:id/gardens
 
- - Params: 
-	 - _json : "{\"user_id\":1,\"name\":\"Summer Garden\",\"notes\":\"it's too damn hot\",\"cardinal_direction\":1}"
+ - Body: 
+	 {
+	  "email": "whatever@example.com",
+	  "password": "password",
+	  "password_confirmation": "password"
+	}
 ```
 
 RESPONSE:
