@@ -31,42 +31,55 @@
 # WEATHER
 
 
-**Login User/ Create and login**
+**Get Weather**
 
-- This endpoint consumes data returned from Google OAuth, looks for a user, and if no user exists creates one. 
+- This endpoint consumes data returned from Geocode and OpenWeather, and returns current daily and hourly weather of a given location. 
 	
 
 ``` ruby
-[POST] /api/v1/find_or_create_user
+[GET] /api/v1/forecast
 
-
-Required PARAMS: 
- - _json: google_OAuth_data.to_json
 ```
 
  Example:
 
 ``` ruby 
-[POST] /api/v1/find_or_create_user
+[POST] /api/v1/forecast?location=chicago,il
 
- - Params: 
-	 - _json : "{\"name\":\"Jennifer \",\"email\":\"jennnnnn@gmail.com\",\"unverified_email\":\"jennsssrlhalloran@gmail.com\",\"email_verified\":true,\"first_name\":\"Jennifer\",\"last_name\":\"Halloan\",\"image\":\"https://lh3.googleusercontent.com/a-/AFdZucr_zffBdhJaydFkdXeeHkhe2BzmVNKGIE-Ozwh=s96-c\"}"
+
 ```
 
 RESPONSE:
 
 ```json
 {
-	"data": {
-		"id": "3",
-		"type": "user",
-		"attributes": {
-			"name": "Jennifer ",
-			"email": "jennnnnn@gmail.com",
-			"image": 
- "https://lh3.googleusercontent.com/a-/AFdZucr_zffBdhJaydFkdXeeHkhe2BzmVNKGIE-Ozwh=s96-c"
-		}
-	}
+  "data": {
+    "id": null,
+    "type": "forecast",
+    "attributes": {
+      "current_weather": {
+        "datetime": "2020-09-30 13:27:03 -0600",
+        "temperature": 79.4,
+        etc
+      },
+      "daily_weather": [
+        {
+          "date": "2020-10-01",
+          "sunrise": "2020-10-01 06:10:43 -0600",
+          etc
+        },
+        {...} etc
+      ],
+      "hourly_weather": [
+        {
+          "time": "14:00:00",
+          "conditions": "cloudy with a chance of meatballs",
+          etc
+        },
+        {...} etc
+      ]
+    }
+  }
 }
 ```
 ---
