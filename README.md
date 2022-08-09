@@ -93,7 +93,7 @@ RESPONSE:
 	
 
 ``` ruby
-[POST] /api/v1/users/:id/gardens
+[POST] /api/v1/users/
 
 
 Required BDOY: 
@@ -105,7 +105,7 @@ Required BDOY:
  Example:
 
 ``` ruby 
-[POST] /api/v1/users/:id/gardens
+[POST] /api/v1/users/
 
  - Body: 
 	 {
@@ -120,12 +120,11 @@ RESPONSE:
 ```json
 {
 	"data": {
-		"id": "2",
-		"type": "garden",
+		"type": "users",
+		"id": "1",
 		"attributes": {
-			"name": "Summer Garden",
-			"cardinal_direction": "South",
-			"notes": "it's too damn hot"
+			"email": "whatever@example.com",
+			"api_key": "abcdefg"
 		}
 	}
 }
@@ -133,103 +132,30 @@ RESPONSE:
 ---
 
 
-**User Gardens**
+**Login User**
 
-- This endpoint returns all the gardens for a user
+- This endpoint logs in a user 
 	
 
 ``` ruby
-[GET] /api/v1/users/:user_id/gardens
-```
+[POST] /api/v1/sessions/
 
 
-RESPONSE:
-
-```json
-{
-	"data": [
-		{
-			"id": "1",
-			"type": "garden",
-			"attributes": {
-				"name": "Summer Garden",
-				"cardinal_direction": "South",
-				"notes": "it's too damn hot"
-			}
-		},
-		{
-			"id": "2",
-			"type": "garden",
-			"attributes": {
-				"name": "Summer Garden",
-				"cardinal_direction": "South",
-				"notes": "it's too damn hot"
-			}
-		}
-	]
-}
-```
----
-
-**Garden Show**
-
-- This endpoint returns a particular garden
-	
-
-``` ruby
-[GET] /api/v1/users/:user_id/gardens
-```
-
-
-RESPONSE:
-
-```json
-{
-	"data": {
-		"id": "2",
-		"type": "garden",
-		"attributes": {
-			"name": "Summer Garden",
-			"cardinal_direction": "South",
-			"notes": "it's too damn hot"
-		}
-	}
-}
-```
----
-**Garden Destroy**
-
-- This endpoint destroys a particular garden
-	
-
-``` ruby
-[DELETE] /api/v1/users/:user_id/gardens/:id
-```
-
-
-RESPONSE:
-
-```json
-No Response
-```
----
-**Garden Update**
-
-- This endpoint updates a particular garden
-	
-
-``` ruby
-[PATCH] /api/v1/users/:user_id/gardens/:id
+Required BDOY: 
+ - email
+ - password
 ```
 
  Example:
 
 ``` ruby 
-[PATCH] /api/v1/users/:user_id/gardens/:id
+[POST] /api/v1/sessions/
 
-
- - Params: 
-	 - _json : "{\"name\":\"Summer Garden\",\"notes\":\"it's too damn hot\",\"cardinal_direction\":1}"
+ - Body: 
+	 {
+	  "email": "whatever@example.com",
+	  "password": "password"
+	}
 ```
 
 RESPONSE:
@@ -237,21 +163,18 @@ RESPONSE:
 ```json
 {
 	"data": {
-		"id": "2",
-		"type": "garden",
+		"type": "users",
+		"id": "1",
 		"attributes": {
-			"name": "Summer Garden",
-			"cardinal_direction": "South",
-			"notes": "it's too damn hot"
+			"email": "whatever@example.com",
+			"api_key": "abcdefg"
 		}
 	}
 }
 ```
 ---
 
-
-
-# Plant
+# ROADTRIP
 
 
 **Create Plant**
