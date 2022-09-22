@@ -236,7 +236,7 @@ RESPONSE:
 
 ```
 
-$ git clone git@github.com:Bone-TM/bone_FE.git
+$ git clone git@github.com:jimriddle1/sweater_weather.git
 
 ```
 
